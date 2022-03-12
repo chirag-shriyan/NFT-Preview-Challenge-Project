@@ -60,12 +60,16 @@ white,aqua,#8bacd9 for Text color and hover,
     justify-content: center;
     align-items: center;
     position: absolute;
-    z-index: 1;
+    opacity: 0;
+    z-index: 2;
     cursor: pointer;
+    transition-property: opacity;
+    transition-duration: 0.4s;
 }
 
 .after-img:hover{
     background-color: #00ffff54;
+    opacity: 1;
     z-index: 2;
 }
 
@@ -76,6 +80,8 @@ white,aqua,#8bacd9 for Text color and hover,
     align-self: start;
     margin: 25px 2px;
     cursor: pointer;
+    transition-property: color;
+    transition-duration: 0.3s;
 }
 
 .card h3:hover{
@@ -150,6 +156,8 @@ hr{
 .p2{
     cursor: pointer;
     color: white;
+    transition-property: color;
+    transition-duration: 0.3s;
 }
 .p2:hover{
     color: aqua;
