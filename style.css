@@ -1,0 +1,156 @@
+/* CSS Reset  */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/*i did not know that it had color in style-guide.md so i used my own*/
+
+/* Colors that i used:-
+#0d192b for Container,
+#14253d for Card Background color,
+#00ffff54 for Main image hover,
+white,aqua,#8bacd9 for Text color and hover,
+#2f415b for hr border */
+
+
+/* Container  */
+
+.container{
+    background-color: #0d192b;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card section */
+
+.card{
+    background-color: #14253d;
+    border-radius: 10px;
+    width: 350px;
+    height: 570px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 23px;
+    
+}
+
+/* Main image section */
+
+.card-img{
+    width:300px ;
+    height: 280px;
+    border-radius: 10px;
+    position: relative;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.after-img{
+    width:300px ;
+    height: 280px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.after-img:hover{
+    background-color: #00ffff54;
+    z-index: 2;
+}
+
+/* Text section  */
+
+.card h3{
+    color: white;
+    align-self: start;
+    margin: 25px 2px;
+    cursor: pointer;
+}
+
+.card h3:hover{
+    color: aqua;   
+}
+
+.txt1{
+    color: #8bacd9;
+    margin-bottom: 25px;
+}
+
+/* Days and ETH section */
+
+.min-box{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.min-item{
+    display: flex;
+    align-items: center;
+}
+.min-item p{
+    margin: 5px;
+    color: aqua;
+}
+
+.min-item2{
+    display: flex;
+    color: #8bacd9;
+    width: 100px;
+    align-items: center;
+}
+
+.min-item2 p{
+    margin: 5px;
+    font-size: 15px;
+}
+
+/* hr  */
+
+hr{
+    margin: 15px;
+    width: 100%;
+    border: 1px solid #2f415b;
+
+}
+
+/* Footer or last section */
+
+.min-box2{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.logo{
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius:50% ;
+    margin-right:  5px;
+}
+
+.p1{
+    color: #8bacd9;
+    margin: 5px;
+}
+
+.p2{
+    cursor: pointer;
+    color: white;
+}
+.p2:hover{
+    color: aqua;
+}
